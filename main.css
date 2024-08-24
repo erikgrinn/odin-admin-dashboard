@@ -1,0 +1,77 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 12px;
+}
+
+.sidebar {
+   grid-column: 1/2; 
+   grid-row: 1/3;
+   gap: 12px;
+}
+
+.header {
+    grid-column: 2/3;
+}
+
+.main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 5fr;
+}
+
+.projects {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr 5fr;
+} 
+.projects-title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.project1,
+.project2 {
+    grid-row: 2/3;
+}
+
+.project3,
+.project4 {
+    grid-row: 3/4;
+}
+
+.project5,
+.project6 {
+    grid-row: 4/5;
+}
+
+.announcements-title {
+    grid-column: 2/3;
+    grid-row:1/2;
+}
+
+.announcements {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    gap: 12px;
+}
+
+.trending-title {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.trending {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    gap: 12px;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
