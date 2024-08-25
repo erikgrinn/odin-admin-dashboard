@@ -12,17 +12,57 @@ body {
 }
 
 .sidebar {
-   grid-column: 1/2; 
-   grid-row: 1/3;
-   gap: 12px;
-   background-color: rgb(0, 115, 255);
-   color: white;
-   padding-left: 8px;
-   font-size: 18px;
+    grid-column: 1/2; 
+    grid-row: 1/3;
+    /* display: grid; */
+    /* grid-template-rows: 1fr 10fr 10fr; */
+    padding: 20px;
+    background-color: #007bff;
 }
 
-.sidebar .dash-logo {
+.dash-logo {
     font-size: 24px;
+}
+
+.dash-logo img {
+    height: 40px;
+    width: 40px;
+}
+
+ul {
+    /* grid: ; */
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0;
+    margin: 0;
+}
+
+.list-top {
+    margin-top: 8px;
+}
+
+.list-bottom {
+    margin-top: 28px;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 50px 1fr; 
+    align-items: center;
+    padding: 10px 0;
+    color: white; 
+    text-align: left;
+}
+
+li img {
+    height: 25px;
+    width: 25px;
+    padding-right:8px;
+    justify-self: center;
+}
+
+li:hover {
+    background-color: #0056b3;
+    cursor: pointer;
 }
 
 .header {
@@ -39,10 +79,7 @@ body {
     padding-left: 24px;
     align-items: center;
     align-content: center;
-    /* justify-content: center; */
-    /* place-items: center;  */
 }
-
 
 .searchbar {
     display: flex;
@@ -52,7 +89,6 @@ body {
     background-color: #ddd;
     border-radius: 8px;
     margin-left: 4px;
-    /* justify-content: end; */
 }
 
 .greeting {
@@ -71,11 +107,8 @@ body {
 .profile {
     display: flex;
     align-items: center;
-    /* justify-content: flex-end; */
     gap: 8px;
     margin-right: 100px;
-    /* align-items: center;
-    margin: 0 56px 0 auto; */
     justify-content: end;
 }
 
@@ -100,9 +133,6 @@ body {
     background-color: orange;
     border-radius: 20px;
 }
-
-
-
 
 .main {
     margin: 0 18px;
@@ -202,17 +232,3 @@ body {
     box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
     margin-bottom: 24px;
 }
-
-ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-li {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-
-
