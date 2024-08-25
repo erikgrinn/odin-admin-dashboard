@@ -208,20 +208,14 @@ li:hover {
 }
 
 .announcements {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 2;
+    grid-row: 2;
     display: grid;
-    /* display:flex; */
-    /* flex-direction: column; */
-    /* padding:8px 24px; */
     text-align: left;
-    /* margin: 0 auto; */
     background-color: white;
-    /* padding-left: 24px; */
     border-radius: 8px;
     box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
     justify-content: space-evenly;
-    /* gap: 8px; */
 }
 
 .announcement-top {
@@ -255,7 +249,7 @@ li:hover {
     gap: 12px;
     display: flex;
     flex-direction: column;
-    padding:8px 12px;
+    padding:8px 30px;
     text-align: left;
     /* margin: 0 auto; */
     background-color: white;
