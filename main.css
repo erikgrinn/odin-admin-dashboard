@@ -71,20 +71,28 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin-right: 4px;
-    gap: 8px;
+    margin-right: 30px;
+    gap: 30px;
     padding-bottom: 24px;
     /* margin:8px; */
 } 
 
 .project {
-    /* width: 75%; */
-    /* height: 100px; */
-    /* border: 1px solid white; */
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-left: 8px solid orange;
     border-radius: 4px;
     box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+.project .icons {
+    display: flex;
+    margin: auto 0;
+    justify-content: right;
+    gap: 8px;
+    
 }
 
 
