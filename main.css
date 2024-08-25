@@ -1,13 +1,14 @@
-/* body {
-    height: 100vh;
-    width: 100%;
-} */
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+}
 
 .dashboard {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
     background-color: #ddd;
-    /* padding-top: 8px; */
+    height: 100vh;
 }
 
 .sidebar {
@@ -18,7 +19,6 @@
    color: white;
    padding-left: 8px;
    font-size: 18px;
-   /* padding-top: 8px; */
 }
 
 .sidebar .dash-logo {
@@ -31,6 +31,7 @@
     display: grid;
     grid-template-columns: 5fr 4fr;
     grid-template-rows: 1fr 1fr;
+    height: 150px;
 }
 .search {
     display: grid;
@@ -48,6 +49,7 @@
 }
 
 .main {
+    margin: 0 18px;
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
@@ -60,6 +62,7 @@
 .projects-title {
     grid-column: 1/2;
     grid-row: 1/2;
+    align-content: end;
 }
 
 .projects {
@@ -68,8 +71,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin: 4px 8px 4px 0;
+    margin-right: 4px;
     gap: 8px;
+    padding-bottom: 24px;
+    /* margin:8px; */
 } 
 
 .project {
@@ -86,25 +91,51 @@
 .announcements-title {
     grid-column: 2/3;
     grid-row:1/2;
+    align-content: end;
 }
 
 .announcements {
     grid-column: 2/3;
     grid-row: 2/3;
-    display: grid;
-    gap: 12px;
-    margin: 0 auto;
+    padding:8px 12px;
+    text-align: left;
+    /* margin: 0 auto; */
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+.announcement-top {
+    border: 0;
+    padding: 8px 0;
+}
+
+.announcement {
+    padding: 8px 0;
+    border-top: 1px solid #ddd;
 }
 
 .trending-title {
     grid-column: 2/3;
     grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .trending {
     grid-column: 2/3;
     grid-row: 4/5;
     gap: 12px;
+    display: flex;
+    flex-direction: column;
+    padding:8px 12px;
+    text-align: left;
+    /* margin: 0 auto; */
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    margin-bottom: 24px;
 }
 
 ul {
