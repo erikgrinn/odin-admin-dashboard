@@ -91,7 +91,9 @@
 .announcements {
     grid-column: 2/3;
     grid-row: 2/3;
+    display: grid;
     gap: 12px;
+    margin: 0 auto;
 }
 
 .trending-title {
@@ -148,4 +150,38 @@ li {
     border:1px solid orange;
     border-radius: 50%;
 }
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-right: 70px;
+    /* align-items: center;
+    margin: 0 56px 0 auto; */
+    /* justify-content: center;
+    place-items: right; */
+}
+
+.profile-image {
+    border:1px solid orange;
+    border-radius: 50%;
+}
+    
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 25px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
 
