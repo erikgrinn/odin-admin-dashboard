@@ -41,11 +41,11 @@ ul {
 }
 
 .list-top {
-    margin-top: 8px;
+    margin-top: 32px;
 }
 
 .list-bottom {
-    margin-top: 28px;
+    margin-top: 32px;
 }
 
 li {
@@ -136,7 +136,7 @@ li:hover {
     align-items: center;
     justify-content: center;
     width: 100px;
-    height: 25px;
+    height: 32px;
     background-color: orange;
     border-radius: 20px;
 }
