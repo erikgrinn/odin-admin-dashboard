@@ -142,7 +142,7 @@ li:hover {
 }
 
 .main {
-    margin: 0 18px;
+    margin: 12px 18px;
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
